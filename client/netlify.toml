@@ -1,0 +1,11 @@
+# Netlify configuration for the Vite Client
+
+[build]
+  base = "client"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
